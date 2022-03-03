@@ -1,0 +1,52 @@
+[
+  {
+    "display_name": "Live Calls",
+    "route": "/live_Calls",
+    "icon": "bx bx-bar-chart-alt"
+  },
+  {
+    "display_name": "Call Log Report",
+    "route": "/call_log_report",
+    "icon": "bx bx-list-ol"
+  },
+  {
+    "display_name": "Service Status",
+    "route": "/service_status",
+    "icon": "bx bx-gift"
+  },
+  {
+    "display_name": "Subscribe & Plans",
+    "route": "/subscribe",
+    "icon": "bx bx-cart"
+  },
+  {
+    "display_name": "Wallet",
+    "route": "/wallet",
+    "icon": "bx bx-bar-chart-alt"
+  },
+  {
+    "display_name": "Donate us",
+    "route": "/donate",
+    "icon": "bx bx-list-ol"
+  },
+  {
+    "display_name": "My Tickets",
+    "route": "/my_tickets",
+    "icon": "bx bx-gift"
+  },
+  {
+    "display_name": "Faq",
+    "route": "/faq",
+    "icon": "bx bx-store-alt"
+  },
+  {
+    "display_name": "Profile",
+    "route": "/profile",
+    "icon": "bx bx-cog"
+  },
+  {
+    "display_name": "Logout",
+    "route": "/logout",
+    "icon": "bx bx-cog"
+  }
+]
