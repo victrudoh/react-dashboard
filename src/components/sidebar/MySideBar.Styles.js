@@ -9,13 +9,14 @@ export const Wrapper = styled.div`
   top: 0;
   background-color: var(--main-bg);
   box-shadow: var(--box-shadow);
+  z-index: 100;
 
   &:hover {
     overflow-x: hidden;
   }
 
   @media screen and (max-width: 1200px) {
-    display: none;
+    display: block;
   }
 `;
 
@@ -28,17 +29,22 @@ export const SidebarTop = styled.div`
 `;
 
 export const SidebarLogo = styled.div`
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
 
-    display: flex;
-    gap: 0.8rem;
-    
   img {
-      width: 2rem;
-      height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
-  h2 {
-      margin-top: 0.2rem;
+  .logoName {
+    margin-top: 0.2rem;
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 600;
+    animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s 1 normal forwards
+      running fadein;
   }
 `;
 
