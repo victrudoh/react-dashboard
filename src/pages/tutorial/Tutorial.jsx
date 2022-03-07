@@ -1,12 +1,11 @@
 import React from 'react'
 
-import { Wrapper, Header, Title, Container, Row, Col } from "./Tutorial.Styles";
+import { Header, Title, Container, Row, Col } from "./Tutorial.Styles";
 import Card from './card/Card';
 
 const Tutorial = () => {
   return (
     <>
-      {/* <Wrapper> */}
       <Header>
         <Title>
           <h2>Tutorial</h2>
@@ -30,7 +29,6 @@ const Tutorial = () => {
           </Col>
         </Row>
       </Container>
-      {/* </Wrapper> */}
     </>
   );
 }

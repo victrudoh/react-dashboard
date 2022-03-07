@@ -1,5 +1,5 @@
-const sidebar = document.querySelector('#wrapper');
-const topbar = document.querySelector("#topbar-btn");
+// const sidebar = document.querySelector('#wrapper');
+// const topbar = document.querySelector("#topbar-btn");
 
 
 // export const sidebarfunc = () => {
