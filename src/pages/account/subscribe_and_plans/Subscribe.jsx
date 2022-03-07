@@ -1,5 +1,4 @@
 import React from 'react'
-import { CardBody } from 'reactstrap';
 
 import { Wrapper, Header, Content, ContentInner, Body } from "./Subscribe.Styles";
 
@@ -13,9 +12,6 @@ const Subscribe = () => {
         <ContentInner>
           <Body>
             <span>Subscribe & Spoof time plans</span>
-            <CardBody>
-
-            </CardBody>
           </Body>
         </ContentInner>
       </Content>
