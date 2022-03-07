@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 //Dependencies
 import { NavLink, Link } from 'react-router-dom'
@@ -8,7 +8,10 @@ import { Wrapper, TopbarLeft, TopbarRight, User, UserName, Status } from './Topb
 
 //Components
 import Dropdown from '../dropdown/Dropdown'
+import MySidebar from '../sidebar/MySideBar'
 
+//Scripts
+import '../sidebar/index';
 
 const notifications = "Scribble scribble"
 
@@ -24,36 +27,44 @@ const renderNotificationItem = (item, index) => (
 </div>
 )
 
+const toggleSidebar = () => (
+  <MySidebar />
+)
+
+
 const Topbar = () => {
 
   return (
-    
     <Wrapper>
-        <TopbarLeft>
-            <a href="/"><span className='bx bx-exit'></span></a>
-            <div className='break'>
-                Balance: £18.17 | Minutes : 10 h 48 m 51 s
-                <NavLink to="/" className='Addmoney'>Add Money</NavLink>
-            </div>
-        </TopbarLeft>
-        <TopbarRight>
-            <Dropdown
-                icon='bx bx-bell'
-                badge='12'
-                contentData={notifications}
-                renderItems={(item, index) => renderNotificationItem(item, index)}
-                renderFooter={() => <Link to='/'>View All</Link>}
-            />
+      <TopbarLeft>
+        <span
+          className="bx bx-exit"
+          id="topbar-btn"
+          onClick={toggleSidebar()}
+        ></span>
+        <div className="break">
+          Balance: £18.17 | Minutes : 10 h 48 m 51 s
+          <NavLink to="/" className="Addmoney">
+            Add Money
+          </NavLink>
+        </div>
+      </TopbarLeft>
+      <TopbarRight>
+        <Dropdown
+          icon="bx bx-bell"
+          badge="12"
+          contentData={notifications}
+          renderItems={(item, index) => renderNotificationItem(item, index)}
+          renderFooter={() => <Link to="/">View All</Link>}
+        />
 
-            <User>
-                <UserName>{curr_user.display_name}</UserName>
-                <Status>{curr_user.status}</Status>
-            </User>
-
-        </TopbarRight>
+        <User>
+          <UserName>{curr_user.display_name}</UserName>
+          <Status>{curr_user.status}</Status>
+        </User>
+      </TopbarRight>
     </Wrapper>
-
-  )
-}
+  );
+};
 
 export default Topbar

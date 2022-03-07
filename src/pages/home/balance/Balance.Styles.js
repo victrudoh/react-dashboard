@@ -53,8 +53,7 @@ export const AddMoney = styled.a`
   }
 `;
 
-export const Telegram = styled.a`
-
+export const Telegram = styled.div`
   img{
       border-radius: var(--border-radius);
   }

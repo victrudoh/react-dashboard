@@ -101,8 +101,8 @@ export const ProgressBar = styled.div`
     border-radius: 18px;
     transition: all 0.5s ease 0s;
     background-color: var(--main-color);
-    /* width: calc((${(props) => props.daysLeft}/33) * 100%); */
-    width: calc((19/33) * 100%);
+    /* width: calc((${(props) => props.daysleft}/33) * 100%); */
+    width: calc((19 / 33) * 100%);
   }
 `;
 

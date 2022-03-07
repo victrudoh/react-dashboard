@@ -42,7 +42,7 @@ const Subscribes = () => {
             <div className="totalDays">33 Days</div>
           </ProgressDigits>
           <ProgressBar>
-            <div className="lineAbove" daysLeft={19}></div>
+            <div className="lineAbove" daysleft={19}></div>
           </ProgressBar>
         </Content>
         <Content>
@@ -58,7 +58,7 @@ const Subscribes = () => {
             <div className="totalDays">33 Days</div>
           </ProgressDigits>
           <ProgressBar>
-            <div className="lineAbove" daysLeft={19}></div>
+            <div className="lineAbove" daysleft={19}></div>
           </ProgressBar>
         </Content>
       </Wrapper>
@@ -86,7 +86,7 @@ const Subscribes = () => {
             <div className="totalDays">33 Days</div>
           </ProgressDigits>
           <ProgressBar>
-            <div className="lineAbove" daysLeft={19}></div>
+            <div className="lineAbove" daysleft={19}></div>
           </ProgressBar>
         </Content>
       </Wrapper>
@@ -114,7 +114,7 @@ const Subscribes = () => {
             <div className="totalDays">33 Days</div>
           </ProgressDigits>
           <ProgressBar>
-            <div className="lineAbove" daysLeft={19}></div>
+            <div className="lineAbove" daysleft={19}></div>
           </ProgressBar>
         </Content>
       </Wrapper>

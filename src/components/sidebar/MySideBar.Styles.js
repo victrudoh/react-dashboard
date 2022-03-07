@@ -15,10 +15,16 @@ export const Wrapper = styled.div`
     overflow-x: hidden;
   }
 
-  @media screen and (max-width: 1200px) {
-    display: block;
+  @media (max-width: 768px) {
+    display: none;
   }
+
+  /* @media screen and (max-width: 1200px) {
+    display: block;
+  } */
 `;
+
+
 
 export const SidebarTop = styled.div`
   display: flex;
@@ -26,6 +32,8 @@ export const SidebarTop = styled.div`
   justify-content: space-between;
   margin-top: 1.4rem;
   margin-left: 1.4rem;
+  /* position: fixed;
+  z-index: 50; */
 `;
 
 export const SidebarLogo = styled.div`
@@ -49,18 +57,23 @@ export const SidebarLogo = styled.div`
 `;
 
 export const SidebarCloseBtn = styled.div`
-  /* display: none; */
+  & {
+    display: none;
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+
   span {
     font-size: 1.6rem;
     margin-right: 0.8rem;
     width: 1.5rem;
     height: 1.5rem;
-  }
 
-  /* a:hover {
-    color: var(--main-color);
-    cursor: pointer;
-  } */
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;
 
 export const SidebarDown = styled.div`
@@ -107,7 +120,6 @@ export const SidebarDown = styled.div`
     box-shadow: rgba(26, 87, 202, 0.466) 0px 0px 9px 5px;
   }
 `;
-
 
 export const SidebarCategory = styled.div`
   font-weight: 500;

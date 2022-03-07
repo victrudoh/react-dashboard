@@ -34,6 +34,10 @@ export const TopbarLeft = styled.div`
     width: 1.5rem;
     height: 1.5rem;
 
+    &:hover{
+      cursor: pointer;
+    }
+
     @media screen and (max-width: 1200px) {
       display: block;
     }

@@ -6,4 +6,7 @@ export const FooterStyle = styled.div`
   align-items: center;
   justify-content: space-between !important;
   flex-wrap: wrap !important;
+  /* position: fixed; */
+  bottom: 0;
 `;
+
