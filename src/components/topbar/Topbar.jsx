@@ -9,6 +9,7 @@ import { Wrapper, TopbarLeft, TopbarRight, User, UserName, Status } from './Topb
 //Components
 import Dropdown from '../dropdown/Dropdown'
 import MySidebar from '../sidebar/MySideBar'
+import MiniSideBar from "../sidebar/miniSideBar/MiniSideBar";
 
 //Scripts
 import '../sidebar/index';
@@ -27,20 +28,19 @@ const renderNotificationItem = (item, index) => (
 </div>
 )
 
-const toggleSidebar = () => (
-  <MySidebar />
-)
+const Topbar = ({ miniMenu, setMiniMenu }) => {
 
-
-const Topbar = () => {
+  const toggleMiniMenu = () => {
+    setMiniMenu(!miniMenu);
+  }
 
   return (
     <Wrapper>
       <TopbarLeft>
         <span
-          className="bx bx-exit"
+          className="bx bx-menu"
           id="topbar-btn"
-          onClick={toggleSidebar()}
+          onClick={toggleMiniMenu}
         ></span>
         <div className="break">
           Balance: £18.17 | Minutes : 10 h 48 m 51 s

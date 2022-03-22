@@ -16,7 +16,7 @@ export const Wrapper = styled.div `
   }
 
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
   }
 
   /* @media screen and (max-width: 1200px) {

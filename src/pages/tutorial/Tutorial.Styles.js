@@ -43,9 +43,9 @@ export const Col = styled.div`
   padding: 0 1rem;
   margin-bottom: 2.2rem;
 
-  @media (min-width: 992px) .lg\:w-1\/2 {
+  /* @media (min-width: 992px) .lg\:w-1\/2 {
     width: 50%;
-  }
+  } */
 `;
 
 
