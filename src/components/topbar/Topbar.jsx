@@ -8,8 +8,6 @@ import { Wrapper, TopbarLeft, TopbarRight, User, UserName, Status } from './Topb
 
 //Components
 import Dropdown from '../dropdown/Dropdown'
-import MySidebar from '../sidebar/MySideBar'
-import MiniSideBar from "../sidebar/miniSideBar/MiniSideBar";
 
 //Scripts
 import '../sidebar/index';
